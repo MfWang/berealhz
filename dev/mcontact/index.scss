@@ -1,0 +1,25 @@
+@import "../../assets/styles/mcommon.scss";
+.content{
+    .block1{
+        padding: 1rem .6rem 1.2rem .6rem;
+        .title{
+            margin-bottom: .88rem;
+        }
+        .desc{
+            margin-bottom: .6rem;
+            font-size: .28rem;
+            color: rgba(7,41,56,0.87);
+            line-height: .56rem;
+        }
+    }
+    .block2{
+        padding: 1.2rem .6rem;
+        background: #f8f8f8;
+        .title{
+            margin-bottom: .88rem;
+        }
+        .desc{
+            margin-bottom: .6rem;
+        }
+    }
+}

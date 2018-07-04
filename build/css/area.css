@@ -1,0 +1,287 @@
+div{
+    /* transform: rotate(30deg); */
+}@charset "UTF-8";
+*,
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/*css 初始化 */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+  margin: 0;
+  padding: 0; }
+
+fieldset, img, input, button {
+  /*fieldset组合表单中的相关元素*/
+  border: none;
+  padding: 0;
+  margin: 0;
+  outline-style: none; }
+
+ul, ol {
+  list-style: none;
+  /*清除列表风格*/ }
+
+input {
+  padding-top: 0;
+  padding-bottom: 0;
+  font-family: "SimSun", "\5B8B\4F53"; }
+
+select, input {
+  vertical-align: middle; }
+
+select, input, textarea {
+  font-size: 12px;
+  margin: 0; }
+
+textarea {
+  resize: none; }
+
+/*防止多行文本框拖动*/
+img {
+  border: 0;
+  vertical-align: middle; }
+
+/*  去掉图片低测默认的3像素空白缝隙*/
+table {
+  border-collapse: collapse;
+  /*合并外边线*/ }
+
+body {
+  font: 12px/150% Arial, Verdana, "\5B8B\4F53";
+  /*宋体，Unicode，统一码*/
+  color: #666;
+  background: #fff; }
+
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+.clearfix {
+  *zoom: 1;
+  /*IE/7/6*/ }
+
+a {
+  color: #666;
+  text-decoration: none; }
+
+a:hover {
+  color: #C81623; }
+
+h1, h2, h3, h4, h5, h6 {
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 100%; }
+
+s, i, em {
+  font-style: normal;
+  text-decoration: none; }
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  display: block;
+  color: #000;
+  text-decoration: none; }
+
+.top {
+  width: 1053px;
+  height: 160px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .top .logo {
+    width: 277px; }
+  .top .menu {
+    display: flex; }
+    .top .menu .menu_item {
+      font-size: 18px;
+      color: #072938;
+      margin-left: 39px; }
+    .top .menu .active {
+      color: #0C90CF;
+      position: relative; }
+      .top .menu .active:after {
+        content: '';
+        width: 60px;
+        height: 4px;
+        background: #68CAF8;
+        position: absolute;
+        left: 50%;
+        bottom: -16px;
+        -webkit-transform: translateX(-50%);
+                transform: translateX(-50%); }
+
+.bottom {
+  padding: 40px 0;
+  background: #373737;
+  font-size: 14px;
+  line-height: 14px; }
+  .bottom .area {
+    display: flex;
+    justify-content: space-between; }
+  .bottom .bottom_menu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start; }
+    .bottom .bottom_menu ul {
+      margin-right: 125px;
+      color: rgba(255, 255, 255, 0.8); }
+      .bottom .bottom_menu ul:last-child {
+        margin: 0; }
+      .bottom .bottom_menu ul li {
+        margin-bottom: 15px; }
+        .bottom .bottom_menu ul li:first-child {
+          margin-bottom: 24px;
+          color: #FFFFFF; }
+  .bottom .code {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .bottom .code .wechat {
+      width: 160px;
+      margin-bottom: 16px; }
+    .bottom .code .company_info {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.8); }
+      .bottom .code .company_info img {
+        width: 18px;
+        margin-right: 10px; }
+
+.area {
+  width: 1060px;
+  margin: 0 auto; }
+
+.banner {
+  width: 100%; }
+
+.block_title {
+  font-size: 28px;
+  color: #072938;
+  line-height: 28px;
+  position: relative;
+  text-align: center; }
+  .block_title:after {
+    content: '';
+    position: absolute;
+    bottom: -18px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 60px;
+    height: 5px;
+    background: linear-gradient(-146deg, #80D0D5 0%, #097EB4 78%); }
+
+.form {
+  width: 560px;
+  margin: 80px auto 0 auto; }
+
+.form_item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 16px; }
+  .form_item span {
+    font-size: 14px;
+    color: rgba(7, 41, 56, 0.5);
+    line-height: 32px;
+    width: 60px;
+    margin-right: 20px; }
+  .form_item input {
+    width: 480px;
+    height: 32px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 4px; }
+    .form_item input.code {
+      width: 132px; }
+  .form_item textarea {
+    width: 480px;
+    height: 88px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 4px; }
+  .form_item .code_img {
+    width: 60px;
+    height: 32px;
+    background: gray;
+    margin: 0 20px 0 6px;
+    display: block; }
+  .form_item .change {
+    font-size: 13px;
+    color: #053E57;
+    line-height: 50px;
+    text-decoration: underline;
+    display: block; }
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px; }
+  .buttons button {
+    cursor: pointer;
+    width: 80px;
+    height: 32px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    font-size: 14px; }
+  .buttons .submit {
+    background: #0C90CF;
+    color: #053E57;
+    margin-right: 20px; }
+  .buttons .cancel {
+    background: #DADADA;
+    color: rgba(5, 62, 87, 0.5); }
+
+.content .berealhz_misson {
+  padding: 100px 0;
+  font-size: 14px;
+  color: rgba(7, 41, 56, 0.87);
+  line-height: 28px; }
+  .content .berealhz_misson .desc {
+    text-align: center;
+    margin-top: 82px; }
+
+.content .list {
+  padding: 100px 0;
+  background: #f8f8f8; }
+  .content .list .area {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap; }
+  .content .list .item {
+    width: 50%;
+    padding: 0 20px; }
+    .content .list .item:nth-child(1), .content .list .item:nth-child(2) {
+      height: 350px;
+      margin-bottom: 140px; }
+  .content .list .title {
+    font-size: 24px;
+    color: #072938;
+    line-height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px; }
+    .content .list .title .title_icon {
+      width: 36px;
+      height: 31px;
+      margin-right: 26px; }
+  .content .list .desc {
+    font-size: 14px;
+    color: rgba(7, 41, 56, 0.87);
+    line-height: 28px; }

@@ -1,0 +1,43 @@
+@import "../../assets/styles/common.scss";
+
+.content{
+    .area{
+        display: flex;
+        justify-content: space-between;
+        align-items: top;
+        padding-top: 40px;
+        padding-bottom: 100px;
+    }
+    .contact{
+        width: 412px;
+        height: 593px;
+        background: #f8f8f8;
+        padding: 60px 40px 0 40px;
+        font-size: 14px;
+        color: rgba(7,41,56,0.87);
+        line-height: 28px;
+        .block_title{
+            margin-bottom: 72px;
+        }
+        .map{
+            width: 332px;
+            height: 260px;
+            margin-top: 20px;
+            display: block;
+        }
+    }
+    .feedback{
+        width: 580px;
+        padding-top: 60px;
+        .block_title{
+            margin-bottom: 57px;
+        }
+        .desc{
+            text-align: center;
+        }
+        .form{
+            width: 560px;
+            margin: 40px auto 0 auto;
+        }
+    }
+}

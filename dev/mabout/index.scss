@@ -1,0 +1,52 @@
+@import "../../assets/styles/mcommon.scss";
+.content{
+    .company_info{
+        .title{
+            margin: 1rem auto .88rem auto;
+        }
+        .desc{
+            padding: 0 .6rem;
+            margin-bottom: 1rem;
+        }
+    }
+    .block2{
+        padding: .9rem .6rem 1.4rem .6rem;
+        background: #F8F8F8;
+        .title{
+            margin-bottom: .22rem;
+        }
+        .desc{
+            text-align: center;
+        }
+        p:nth-child(2){
+            margin-bottom: 1rem;
+        }
+    }
+    .block3{
+        padding: 1.2rem .6rem .6rem .6rem;
+        .title{
+            margin-bottom: 1rem;
+        }
+        > .desc{
+            margin-bottom: .8rem;
+        }
+        .item{
+             margin-bottom: .6rem;
+             span{
+                font-size: .28rem;
+                color: #072938;
+                line-height: .56rem;
+                display: block;
+                font-weight: 500;
+             }
+        }
+    }
+    .block4{
+        padding: 1.2rem .6rem 1rem .6rem;
+        background: #F8F8F8;
+        .title{
+            margin-bottom: 1.18rem;
+        }
+
+    }
+}

@@ -1,0 +1,202 @@
+@import "./main.scss";
+
+.banner{
+    width: 100%;
+}
+body.active{
+    height: 100vh;
+    overflow: hidden;
+}
+.top{
+    height: .96rem;
+    position: relative;
+    background: #fff;
+    z-index: 999;
+    width: 100%;
+    &.active{
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    .menu_btn{
+        position: absolute;
+        left: .27rem;
+        top: 50%;
+        transform: translateY(-50%);
+        border: none;
+        outline: none;
+    }
+    .menu_btn_normal{
+        width: .36rem;
+        height: .28rem;
+        background: url('./images/btn_menu.png') no-repeat center / contain;
+    }
+    .menu_btn_close{
+        width: .28rem;
+        height: .28rem;
+        background: url('./images/btn_close.png') no-repeat center / contain;
+    }
+    .top_img{
+        width: 1.66rem;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+.menu{
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - .96rem);
+    background: #fff;
+    top: .96rem;
+    .menu_item{
+        height: .96rem;
+        font-size: .3rem;
+        line-height: .96rem;
+        &.active{
+            background: rgba(22,40,103,0.10);
+            .item_link{
+                color: #0C90CF;
+            }
+        }
+        .item_link{
+            color: #072938;
+            display: block;
+            width: calc(100% - 0.6rem);
+            box-shadow: inset 0 -1px 0 0 rgba(23,26,51,0.12);
+            margin: 0 auto;
+        }
+    }
+}
+.bottom{
+    width: 100%;
+    height: 3.84rem;
+    background: #373737;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .wechat{
+        width: 1.6rem;
+        margin-bottom: .26rem;
+    }
+    .company_info{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: .24rem;
+        color: #FFFFFF;
+        line-height: .28rem;
+        img{
+            width: .21rem;
+            margin-right: .09rem;
+        }
+    }
+}
+
+.title{ 
+    font-size: .48rem;
+    color: #072938;
+    text-align: center;
+    line-height: .56rem;
+    font-weight: 500;
+    position: relative;
+}
+.title_line{
+    &:after{
+        content: '';
+        width: .98rem;
+        height: .8rem;
+        background: url('./images/m_pic_line_color.png') no-repeat center bottom / contain;
+        position: absolute;
+        bottom: -.2rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+.desc{
+    font-size: .28rem;
+    color: rgba(7,41,56,0.87);
+    line-height: .56rem;
+}
+.img_block{
+    display: block;
+    width: 100%;
+}
+.center{
+    text-align: center;
+}
+
+.form{
+    width: 100%;
+}
+.form_item{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: .4rem;
+    .code_group{
+        width: 4.88rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    span{
+        font-size: .28rem;
+        color: rgba(7,41,56,0.50);
+        line-height: .8rem;
+    }
+    input{
+        width: 4.88rem;
+        height: .8rem;
+        background: #FFFFFF;
+        border: 1px solid rgba(0,0,0,0.12);
+        border-radius: .08rem;
+        &.code{
+            width: 1.4rem;
+        }
+    }
+    textarea{
+        width: 4.88rem;
+        height: 1.76rem;
+        background: #FFFFFF;
+        border: 1px solid rgba(0,0,0,0.12);
+        border-radius: .08rem;
+    }
+    .code_img{
+        width: 1.2rem;
+        height: .8rem;
+        background: gray;
+    }
+    .change{
+        font-size: .26rem;
+        color: #053E57;
+        line-height: .8rem;
+        text-decoration: underline;
+        display: block;
+    }
+}
+.buttons{
+    margin-top: .6rem;
+    button{
+        cursor: pointer;
+        width: 100%;
+        height: .88rem;
+        border: 1px solid rgba(0,0,0,0.12);
+        border-radius: .12rem;
+        font-size: .38rem;
+    }
+    .submit{
+        background: #0C90CF;
+        color: #053E57;
+        margin-bottom: .43rem;
+    }
+    .cancel{
+        background: #DADADA;
+        color: rgba(5,62,87,0.50);
+    }
+}

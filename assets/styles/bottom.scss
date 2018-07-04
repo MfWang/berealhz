@@ -1,0 +1,50 @@
+.bottom{
+    padding: 40px 0;
+    background: #373737;
+    font-size: 14px;
+    line-height: 14px;
+    .area{
+        display: flex;
+        justify-content: space-between;
+    }
+    .bottom_menu{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        ul{
+            margin-right: 125px;
+            color: rgba(255,255,255,0.80);
+            &:last-child{
+                margin: 0;
+            }
+            li{
+                margin-bottom: 15px;
+                &:first-child{
+                    margin-bottom: 24px;
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+    .code{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .wechat{
+            width: 160px;
+            margin-bottom: 16px;
+        }
+        .company_info{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 13px;
+            color: rgba(255,255,255,0.80);
+            img{
+                width: 18px;
+                margin-right: 10px;
+            }
+        }
+    }
+}

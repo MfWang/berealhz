@@ -1,0 +1,40 @@
+@import "../../assets/styles/common.scss";
+.content{
+    .berealhz_misson{
+        padding: 100px 0;
+        font-size: 14px;
+        color: rgba(7,41,56,0.87);
+        line-height: 28px;
+        .business_list{
+            margin: 80px auto 0 auto;
+            width: 830px;
+        }
+        li{
+            position: relative;
+            padding-left: 18px;
+            &:before{
+                font-size: 14px;
+                color: rgba(7,41,56,0.50);
+                line-height: 28px;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            &:nth-child(1):before{
+                content: '1、'
+            }
+            &:nth-child(2):before{
+                content: '2、'
+            }
+            &:nth-child(3):before{
+                content: '3、'
+            }
+            &:nth-child(4):before{
+                content: '4、'
+            }
+            &:nth-child(5):before{
+                content: '5、'
+            }
+        }
+    }
+}
