@@ -4,7 +4,7 @@ const uglify = require('uglifyjs-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextWebapckPlugin = require('extract-text-webpack-plugin');
 var website ={
-    // publicPath:"http://localhost:8888/"
+    publicPath:"http://localhost:8888/"
     // publicPath:"http://192.168.1.103:8888/"
 }
 const glob = require('glob');
@@ -74,7 +74,7 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, './build'),
         filename: 'js/[name].js',
-        // publicPath:website.publicPath  //publicPath：主要作用就是处理静态文件路径的。
+        publicPath:website.publicPath  //publicPath：主要作用就是处理静态文件路径的。
     },
     // 模块：例如解读css，图片如何转换、压缩
     module: {

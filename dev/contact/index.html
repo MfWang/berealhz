@@ -2,100 +2,158 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <title>贝睿 | 联系我们</title>
 </head>
-<body class="home_bg">
-    <div class="top">
-        <img class="logo" src="./images/pic_logo.png" alt="">
-        <div class="menu">
-            <a class="menu_item" href="http://htmlpreview.github.io/?https://github.com/MfWang/berealhz/blob/master/build/home.html">网站首页</a>
-            <a class="menu_item" href="http://htmlpreview.github.io/?https://github.com/MfWang/berealhz/blob/master/build/about.html">关于我们</a>
-            <a class="menu_item " href="http://htmlpreview.github.io/?https://github.com/MfWang/berealhz/blob/master/build/business.html">主营业务</a>
-            <a class="menu_item" href="http://htmlpreview.github.io/?https://github.com/MfWang/berealhz/blob/master/build/area.html">专注领域</a>
-            <a class="menu_item active" href="http://htmlpreview.github.io/?https://github.com/MfWang/berealhz/blob/master/build/contact.html">联系我们</a>
-        </div>
-    </div>
-    <div class="content">
-        <img class="banner" src="./images/contact_banner.png" alt="">
-        <div class="area">
-            <div class="contact">
-                <p class="block_title">联系我们</p>
-                <p class="desc">
-                    杭州贝睿企业咨询管理有限公司<br/>
-                    地址：杭州市滨江区科技馆街1505号凯瑞金座517室<br/>
-                    网址：www.berealhz.com<br/>
-                    邮箱：hr@berealhz.com
-                </p>
-                <img src="./images/contact_pic_map.png" alt="" class="map">
+<body>
+    
+    <nav class="navbar navbar-default navbar-fixed-top navbar-berealhz ">
+        <div class="container-fluid width_lg_1060">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            </button>
+            <a class="navbar-brand" href="/home.html"></a>
             </div>
-            <div class="feedback">
-                <p class="block_title">咨询反馈</p>
-                <p class="desc">
-                    尊敬的用户： 如果您想获悉更多的详细信息，您可以通过邮件的方式把你的需求发送到邮箱 hr@berealhz.com，或者填写并提交如下的内容，图派公司将安排专人与您联系，谢谢！
-                </p>
-                <div class="form">
-                    <div class="form_item">
-                        <span>留言标题</span>
-                        <input type="text">
+        
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-fixed-top fixed_menu" id="bs-example-navbar-collapse-1" >
+            <ul class="nav navbar-nav navbar-right">
+                <li class="menu"><a class="menu_item" href="/home.html">网站首页</a></li>
+                <li class="menu"><a class="menu_item" href="/about.html">关于我们</a></li>
+                <li class="menu"><a class="menu_item " href="/business.html">主营业务</a></li>
+                <li class="menu"><a class="menu_item" href="/area.html">专注领域</a></li>
+                <li class="menu active"><a class="menu_item" href="/contact.html">联系我们</a></li>
+            </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="visible-xs visible-sm">
+                <img class="img_block" src="./images/m_contact_banner.png" alt="">
+            </div>
+            <div class="visible-md visible-lg">
+                <img class="img_block" src="./images/contact_banner.png" alt="">
+            </div>
+        </div>
+        <div class="row section2">
+            <div class="col-xs-12 col-md-5 col-md-offset-1">
+                <div class="block1 padding_block">
+                    <p class="title">联系我们</p>
+                    <p class="desc">
+                        杭州贝睿企业咨询管理有限公司<br/>
+                        地址：杭州市滨江区科技馆街1505号凯瑞金座517室<br/>
+                        网址：www.berealhz.com<br/>
+                        邮箱：hr@berealhz.com         
+                    </p>
+                    <div class="visible-xs visible-sm">
+                        <img class="img_block" src="./images/m_map.png" alt="">
                     </div>
-                    <div class="form_item">
-                        <span>留言内容</span>
-                        <input type="text">
-                    </div>
-                    <div class="form_item">
-                        <span>联系邮箱</span>
-                        <textarea name="" id=""></textarea>
-                    </div>
-                    <div class="form_item">
-                        <span>验证码</span>
-                        <input type="text" class="code">
-                        <img class="code_img" src="" alt="">
-                        <label class="change">看不清，换一张</label>
-                    </div>
-                    <div class="buttons">
-                        <button class="submit">提交</button>
-                        <button class="cancel">取消</button>
+                    <div class="visible-md visible-lg">
+                        <img class="img_block" src="./images/pc_map.png" alt="">
                     </div>
                 </div>
             </div>
+            <div class="col-xs-12 feedback">
+                <div class="block2 padding_block">
+                    <p class="title">咨询反馈</p>
+                    <p class="desc">
+                        尊敬的用户： 如果您想获悉更多的详细信息，您可以通过邮件的方式把你的需求发送到邮箱 hr@berealhz.com，或者填写并提交如下的内容，图派公司将安排专人与您联系，谢谢！
+                    </p>
+                    <div class="form">
+                        <div class="row form_item">
+                            <div class="col-xs-3 col-sm-2 col-md-3 col-lg-3">
+                                <p>姓名</p>
+                            </div>
+                            <div class="col-xs-9 col-sm-10 col-md-9 col-lg-9">
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="row form_item">
+                            <div class="col-xs-3 col-sm-2 col-md-3 col-lg-3">
+                                <p>联系方式</p>
+                            </div>
+                            <div class="col-xs-9 col-sm-10 col-md-9 col-lg-9">
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="row form_item">
+                            <div class="col-xs-3 col-sm-2 col-md-3 col-lg-3">
+                                <p>留言内容</p>
+                            </div>
+                            <div class="col-xs-9 col-sm-10 col-md-9 col-lg-9">
+                                <textarea name="" id=""></textarea>
+                            </div>
+                        </div>
+                        <div class="row form_item">
+                            <div class="col-xs-3 col-sm-2 col-md-3 col-lg-3">
+                                <p>验证码</p>
+                            </div>
+                            <div class="col-xs-4 col-sm-7 col-md-6 col-lg-6">
+                                <input type="text" class="code">
+                            </div>
+                            <div class="col-xs-5 col-sm-3 col-md-3 col-lg-3">
+                                <img class="code_img" src="" alt="">
+                                <label class="change">看不清，换一张</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-6 submit_block">
+                                <button class="submit">提交</button>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-6">
+                                <button class="cancel">取消</button>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
         </div>
     </div>
-    
-    <div class="bottom">
-        <div class="area">
-            <div class="bottom_menu">
-                <ul>
-                    <li>关于我们</li>
-                    <li>公司简介</li>
-                    <li>愿景目标</li>
-                    <li>专注领域</li>
-                    <li>加入我们</li>
-                </ul>
-                <ul>
-                    <li>专注领域</li>
-                </ul>
-                <ul>
-                    <li>商业伙伴</li>
-                    <li>客户案例</li>
-                </ul>
-                <ul>
-                    <li>最新资讯</li>
-                </ul>
-                <ul>
-                    <li>联系我们</li>
-                    <li>联系我们</li>
-                    <li>咨询反馈</li>
-                </ul>
+
+    <div class="container-fluid bottom">
+        <div class="row width_lg_1060">
+            <div class="visible-sm visible-md visible-lg bottom_menu_block">
+                <div class="bottom_menu">
+                    <ul class="menu_list">
+                        <li>关于我们</li>
+                        <li>公司简介</li>
+                        <li>愿景目标</li>
+                        <li>专注领域</li>
+                        <li>加入我们</li>
+                    </ul>
+                    <ul class="menu_list">
+                        <li>专注领域</li>
+                    </ul>
+                    <ul class="menu_list">
+                        <li>商业伙伴</li>
+                        <li>客户案例</li>
+                    </ul>
+                    <ul class="menu_list">
+                        <li>最新资讯</li>
+                    </ul>
+                    <ul class="menu_list">
+                        <li>联系我们</li>
+                        <li>联系我们</li>
+                        <li>咨询反馈</li>
+                    </ul>
+                </div> 
             </div>
-            
-            <div class="code">
-                <img class="wechat" src="./images/pic_wechat.png" alt="">
+            <div class="company">
+                <div class="company_code"></div>
                 <div class="company_info">
-                    <img src="./images/icon_logo_white.png" alt="">
-                    <p>杭州贝睿企业咨询管理有限公司　</p>
+                    <span class="logo"></span>
+                    <p>杭州贝睿企业咨询管理有限公司</p>
                 </div>
             </div>
         </div>

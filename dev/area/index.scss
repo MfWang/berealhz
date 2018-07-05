@@ -1,0 +1,27 @@
+@import "../../assets/styles/common.scss";
+
+.list{
+    background: #f8f8f8;
+    .item{
+        margin-bottom: 50px;
+        &:last-child{
+            margin: 0;
+        }
+    }
+    .title{
+        margin: 0;
+    }
+    .title_block{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .title:after{
+        height: 0;
+    }
+    .title_icon{
+        width: 25px;
+        margin-right: 10px;
+    }
+}

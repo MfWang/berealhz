@@ -1,0 +1,179 @@
+//col-xs
+body{
+    padding-top: 50px;
+}
+.img_block{
+    width: 100%;
+    display: block;
+}
+.padding_block{
+    padding: 50px 30px;
+}
+.title{
+    font-size: 24px;
+    color: #072938;
+    text-align: center;
+    line-height: 28px;
+    font-weight: 500;
+    position: relative;
+    margin-bottom: 40px;
+    &:after{
+        content: '';
+        width: 100%;
+        height: 4px;
+        background: url('./images/title_line.png') no-repeat center / contain;
+        position: absolute;
+        bottom: -15px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+.desc{
+    font-size: 14px;
+    color: rgba(7, 41, 56, 0.87);
+    line-height: 28px;
+}
+.text_center{
+    text-align: center;
+}
+.form{
+    width: 100%;
+
+    .form_item{
+        margin-bottom: 20px;
+        p{
+            font-size: 14px;
+            color: rgba(7,41,56,0.50);
+            line-height: 40px;
+        }
+        input, textarea{
+            width: 100%;
+            height: 40px;
+            background: #FFFFFF;
+            border: 1px solid rgba(0,0,0,0.12);
+            border-radius: 4px;
+        }
+        textarea{
+            height: 88px;
+        }
+        .code_img{
+            width: 60px;
+            height: 40px;
+            background: gray;
+            display: inline-block;
+        }
+        .change{
+            font-size: 13px;
+            color: #053E57;
+            line-height: 40px;
+            text-decoration: underline;
+            display: block;
+            display: none;
+        }
+
+    }
+
+    button{
+        cursor: pointer;
+        width: 100%;
+        height: 40px;
+        border: 1px solid rgba(0,0,0,0.12);
+        border-radius: 6px;
+        font-size: 19px;
+    }
+    .submit{
+        background: #0C90CF;
+        color: #053E57;
+        margin-bottom: 20px;
+    }
+    .cancel{
+        background: #DADADA;
+        color: rgba(5,62,87,0.50);
+    }
+}
+
+.navbar-default.navbar-berealhz{
+    background: #fff;
+    box-shadow: none;
+    border: none;
+    margin: 0;
+    .navbar-header{
+        position: relative;
+    }
+    .navbar-toggle{
+        width: 18px;
+        height: 14px;
+        background: url('./images/menu.png') no-repeat center / contain;
+        border: none;
+        border-radius: 0;
+        float: left;
+        padding: 0;
+        margin: 18px 0 18px 15px;
+        &[aria-expanded=true]{
+            background: url('./images/close.png') no-repeat center / contain;
+        }
+    }
+    .navbar-brand{
+        width: 83px;
+        height: 20px;
+        background: url('./images/menu_logo_m.png') no-repeat center / contain;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .fixed_menu{
+        background: #fff;
+        width: 100%;
+        height: calc(100vh - 50px);
+        margin: 0;
+        top: 50px;
+        .navbar-nav{
+            margin: 0 -15px;
+        }
+    }
+    .menu{
+        .menu_item{
+            height: 48px;
+            font-size: 15px;
+            line-height: 48px;
+            color: #072938;
+            box-shadow: none;
+            padding: 0 15px;
+            box-shadow: inset 0 -1px 0 0 rgba(23,26,51,0.12);
+        }
+        &.active .menu_item{
+            color: #0C90CF;
+            background: rgba(22,40,103,0.10);
+        }
+    }
+}
+
+.bottom{
+    width: 100%;
+    background: #373737;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    .company_code{
+        width: 80px;
+        height: 80px;
+        background: url('./images/wechat_m.png') no-repeat center / contain;
+        margin: 0 auto 13px auto;
+    }
+    .company_info{
+        font-size: 12px;
+        color: #FFFFFF;
+        line-height: 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .logo{
+            width: 11px;
+            height: 11px;
+            background: url('./images/logo_m.png') no-repeat center / contain;
+            margin-right: 10px;
+        }
+    }
+}
+
+

@@ -1,0 +1,128 @@
+//col-md
+/* 中等屏幕（桌面显示器，大于等于 992px） */
+@media (min-width: 992px) {
+    .nav{
+        margin: 0;
+    }
+    .width_lg_1060{
+        width: auto;
+        max-width: 1060px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    .bottom {
+        .width_lg_1060{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .bottom_menu_block{
+            width: calc(100% - 300px);
+            margin: 0;
+            .bottom_menu{
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                .menu_list{
+                    display: inline-block;
+                    font-size: 14px;
+                    line-height: 14px;
+                    color: rgba(255,255,255,0.80);
+                    margin-right: 50px;
+                    li{
+                        margin-bottom: 15px;
+                        &:first-child{
+                            margin-bottom: 24px;
+                            color: #FFFFFF;
+                        }
+                    }
+                }
+            }
+        }
+        .company{
+            width: 210px;
+            .company_code{
+                width: 160px;
+                height: 160px;
+                background: url('./images/wechat.png') no-repeat center / contain;
+                margin: 0 auto 16px auto;
+            }
+            .company_info{
+                font-size: 13px;
+                color: #FFFFFF;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .logo{
+                    width: 18px;
+                    height: 18px;
+                    background: url('./images/logo.png') no-repeat center / contain;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+
+    .feedback{
+        width: 500px;
+    }
+    .form{
+        width: 100%;
+    
+        .form_item{
+            margin-bottom: 20px;
+            p{
+                font-size: 14px;
+                color: rgba(7,41,56,0.50);
+                line-height: 32px;
+            }
+            input, textarea{
+                width: 100%;
+                height: 32px;
+                background: #FFFFFF;
+                border: 1px solid rgba(0,0,0,0.12);
+                border-radius: 4px;
+            }
+            textarea{
+                height: 88px;
+            }
+            .code_img{
+                width: 60px;
+                height: 32px;
+                background: gray;
+                display: inline-block;
+            }
+            .change{
+                font-size: 13px;
+                color: #053E57;
+                line-height: 40px;
+                text-decoration: underline;
+                display: block;
+                display: none;
+            }
+    
+        }
+        .submit_block{
+            display: flex;
+            justify-content: flex-end;
+        }
+    
+        button{
+            cursor: pointer;
+            width: 80px;
+            height: 32px;
+            border: 1px solid rgba(0,0,0,0.12);
+            border-radius: 6px;
+            font-size: 14px;
+        }
+        .submit{
+            background: #0C90CF;
+            color: #053E57;
+            margin-bottom: 20px;
+        }
+        .cancel{
+            background: #DADADA;
+            color: rgba(5,62,87,0.50);
+        }
+    }
+}

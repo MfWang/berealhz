@@ -2,36 +2,65 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <title>贝睿 | 专注领域</title>
 </head>
-<body class="home_bg">
-    <div class="top">
-        <img class="logo" src="./images/pic_logo.png" alt="">
-        <div class="menu">
-            <a class="menu_item" href="http://htmlpreview.github.io/?https://github.com/MfWang/berealhz/blob/master/build/home.html">网站首页</a>
-            <a class="menu_item" href="http://htmlpreview.github.io/?https://github.com/MfWang/berealhz/blob/master/build/about.html">关于我们</a>
-            <a class="menu_item" href="http://htmlpreview.github.io/?https://github.com/MfWang/berealhz/blob/master/build/business.html">主营业务</a>
-            <a class="menu_item active" href="http://htmlpreview.github.io/?https://github.com/MfWang/berealhz/blob/master/build/area.html">专注领域</a>
-            <a class="menu_item" href="http://htmlpreview.github.io/?https://github.com/MfWang/berealhz/blob/master/build/contact.html">联系我们</a>
-        </div>
-    </div>
-    <div class="content">
-        <img class="banner" src="./images/field_banner.png" alt="">
-        <div class="berealhz_misson">
-            <div class="area">
-                <p class="block_title">擅长行业</p>
-                <p class="desc">电子商务／人工智能／大数据／互联网金融/移动支付／在线旅游（OTA）／物联网／视频／机器学习／高科技／VR/AR／互联网医疗、教育</p>
+<body>
+    
+    <nav class="navbar navbar-default navbar-fixed-top navbar-berealhz ">
+        <div class="container-fluid width_lg_1060">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            </button>
+            <a class="navbar-brand" href="/home.html"></a>
+            </div>
+        
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-fixed-top fixed_menu" id="bs-example-navbar-collapse-1" >
+            <ul class="nav navbar-nav navbar-right">
+                <li class="menu "><a class="menu_item" href="/home.html">网站首页</a></li>
+                <li class="menu"><a class="menu_item" href="/about.html">关于我们</a></li>
+                <li class="menu"><a class="menu_item " href="/business.html">主营业务</a></li>
+                <li class="menu active"><a class="menu_item" href="/area.html">专注领域</a></li>
+                <li class="menu"><a class="menu_item" href="/contact.html">联系我们</a></li>
+            </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+
+      <div class="container-fluid">
+        <div class="row">
+            <div class="visible-xs visible-sm">
+                <img class="img_block" src="./images/area_banner_m.png" alt="">
+            </div>
+            <div class="visible-md visible-lg">
+                <img class="img_block" src="./images/area_banner.png" alt="">
             </div>
         </div>
-        <div class="list">
-            <div class="area">
-                <div class="item">
-                    <div class="title">
-                        <img class="title_icon" src="./images/skill_icon_network.png" alt="">
-                        <p class="text">互联网事业部</p>
+        <div class="row padding_block">
+            <div class="block1 col-md-8 col-lg-8 col-md-offset-2 col-lg-offset-2">
+                <p class="title">擅长行业</p>
+                <p class="desc">
+                    电子商务／人工智能／大数据／互联网金融/移动支付／在线旅游（OTA）／物联网／视频／
+                    机器学习／高科技／VR/AR／互联网医疗、教育            
+                </p>
+            </div>
+        </div>
+        <div class="row list padding_block">
+            <div class="width_lg_1060">
+                <div class="item col-md-6 col-lg-6">
+                    <div class="title_block">
+                        <img class="title_icon" src="./images/icon1.png" alt="">
+                        <p class="title">互联网事业部</p>
                     </div>
                     <p class="desc">曾服务过多家知名互联网巨头和高科技公司，阿里巴巴、百度、京东、美团点评、唯品会、搜狐、新浪微博等...</p>
                     <p class="desc">
@@ -41,10 +70,10 @@
                         成功帮助客户在图像算法、语音识别算法、搜索算法、推荐算法、大数据、机器学习等领域推荐了诸多优秀的AI、大数据相关的核心工程师。
                     </p>
                 </div>
-                <div class="item">
-                    <div class="title">
-                        <img class="title_icon" src="./images/skill_icon_industry.png" alt="">
-                        <p class="text">消费品、工业事业部</p>
+                <div class="item col-md-6 col-lg-6">
+                    <div class="title_block">
+                        <img class="title_icon" src="./images/icon2.png" alt="">
+                        <p class="title">消费品、工业事业部</p>
                     </div>
                     <p class="desc">
                         医疗/健康事业部主要以北京、上海为中心服务于全国的生物医药、医疗器械、健康医疗三个领域。<br/>
@@ -53,10 +82,10 @@
                         专注于Sales、Marketing、医学等function，擅长职位包括市场总监/经理、产品经理、地区主管/经理、大区经理、KA经
                     </p>
                 </div>
-                <div class="item">
-                    <div class="title">
-                        <img class="title_icon" src="./images/skill_icon_medical.png" alt="">
-                        <p class="text">医疗/健康事业部</p>
+                <div class="item col-md-6 col-lg-6">
+                    <div class="title_block">
+                        <img class="title_icon" src="./images/icon3.png" alt="">
+                        <p class="title">医疗/健康事业部</p>
                     </div>
                     <p class="desc">
                         经过多年的努力和沉淀，着重积累了北京上海等国内主要城市的消费品、零售行业的拓展运营供应链等中高端职位、人事财务等职能方向的候选人。<br/>
@@ -65,10 +94,10 @@
                         曾服务过的客户：Alstom、Bosch Rexroth、Heraeus、Degremont、Mars...
                     </p>
                 </div>
-                <div class="item">
-                    <div class="title">
-                        <img class="title_icon" src="./images/skill_icon_IT.png" alt="">
-                        <p class="text">IT & 高科技事业部</p>
+                <div class="item col-md-6 col-lg-6">
+                    <div class="title_block">
+                        <img class="title_icon" src="./images/icon4.png" alt="">
+                        <p class="title">IT & 高科技事业部</p>
                     </div>
                     <p class="desc">
                         我们有常年专注在IT、高科技行业的资深顾问，服务过Apple、三星、Motorola、Microsoft、Beats等知名高科技公司。<br/>
@@ -76,47 +105,46 @@
                         擅长领域：消费电子、智能硬件、机器人、软件、半导体、通信等<br/>
                     </p>
                 </div>
-            </div>
-            
+            </div> 
         </div>
     </div>
-    
-    <div class="bottom">
-        <div class="area">
-            <div class="bottom_menu">
-                <ul>
-                    <li>关于我们</li>
-                    <li>公司简介</li>
-                    <li>愿景目标</li>
-                    <li>专注领域</li>
-                    <li>加入我们</li>
-                </ul>
-                <ul>
-                    <li>专注领域</li>
-                </ul>
-                <ul>
-                    <li>商业伙伴</li>
-                    <li>客户案例</li>
-                </ul>
-                <ul>
-                    <li>最新资讯</li>
-                </ul>
-                <ul>
-                    <li>联系我们</li>
-                    <li>联系我们</li>
-                    <li>咨询反馈</li>
-                </ul>
+
+    <div class="container-fluid bottom">
+        <div class="row width_lg_1060">
+            <div class="visible-sm visible-md visible-lg bottom_menu_block">
+                <div class="bottom_menu">
+                    <ul class="menu_list">
+                        <li>关于我们</li>
+                        <li>公司简介</li>
+                        <li>愿景目标</li>
+                        <li>专注领域</li>
+                        <li>加入我们</li>
+                    </ul>
+                    <ul class="menu_list">
+                        <li>专注领域</li>
+                    </ul>
+                    <ul class="menu_list">
+                        <li>商业伙伴</li>
+                        <li>客户案例</li>
+                    </ul>
+                    <ul class="menu_list">
+                        <li>最新资讯</li>
+                    </ul>
+                    <ul class="menu_list">
+                        <li>联系我们</li>
+                        <li>联系我们</li>
+                        <li>咨询反馈</li>
+                    </ul>
+                </div> 
             </div>
-            
-            <div class="code">
-                <img class="wechat" src="./images/pic_wechat.png" alt="">
+            <div class="company">
+                <div class="company_code"></div>
                 <div class="company_info">
-                    <img src="./images/icon_logo_white.png" alt="">
-                    <p>杭州贝睿企业咨询管理有限公司　</p>
+                    <span class="logo"></span>
+                    <p>杭州贝睿企业咨询管理有限公司</p>
                 </div>
             </div>
         </div>
     </div>
-
 </body>
 </html>

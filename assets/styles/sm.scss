@@ -1,0 +1,117 @@
+//col-sm
+/* 小屏幕（平板，大于等于 768px） */
+@media (min-width: 768px) { 
+    body{
+        background: #fff;
+        padding: 0;
+    }
+    .width_lg_1060{
+        width: auto;
+        max-width: 1060px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    .navbar-fixed-top{
+        position: relative;
+    }
+    .navbar-default.navbar-berealhz{
+        .container-fluid{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar-brand{
+            width: 245px;
+            height: 60px;
+            background: url('./images/menu_logo.png') no-repeat center left / contain;
+            position: relative;
+            top: 0;
+            left: 0;
+            transform: translateX(0);
+            margin: 15px 0;
+        }
+        .fixed_menu{
+            border: none;
+            top: 0;
+            .nav{
+                margin: 0;
+            }
+            .menu{
+                .menu_item{
+                    font-size: 16px;
+                    color: #072938;
+                    margin-left: 0;
+                    background: #fff;
+                    box-shadow: none;
+                }
+                &.active .menu_item{
+                    color: #0C90CF;
+                    position: relative;
+                    background: #fff;
+                    &:after{
+                        content: '';
+                        width: 60px;
+                        height: 4px;
+                        background: #68CAF8;
+                        position: absolute;
+                        left: 50%;
+                        bottom: 0;
+                        transform: translateX(-50%);
+                    }
+                }
+            }
+        }
+    }
+
+    .bottom{
+        .width_lg_1060{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .bottom_menu_block{
+            width: calc(100% - 300px);
+            margin-right: 60px;
+            .bottom_menu{
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                .menu_list{
+                    display: inline-block;
+                    font-size: 14px;
+                    line-height: 14px;
+                    color: rgba(255,255,255,0.80);
+                    li{
+                        margin-bottom: 15px;
+                        &:first-child{
+                            margin-bottom: 24px;
+                            color: #FFFFFF;
+                        }
+                    }
+                }
+            }
+        }
+        .company{
+            width: 210px;
+            .company_code{
+                width: 160px;
+                height: 160px;
+                background: url('./images/wechat.png') no-repeat center / contain;
+                margin: 0 auto 16px auto;
+            }
+            .company_info{
+                font-size: 13px;
+                color: #FFFFFF;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .logo{
+                    width: 18px;
+                    height: 18px;
+                    background: url('./images/logo.png') no-repeat center / contain;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,20 @@
+@import "../../assets/styles/common.scss";
+
+.home_list{
+    padding: 60px 0 77px 0;
+    font-size: 13px;
+    color: #243841;
+    text-align: center;
+    .icon{
+        width: 71px;
+        margin-bottom: 17px;
+    }
+}
+@media (min-width: 992px) {
+    .home_list{
+        font-size: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
