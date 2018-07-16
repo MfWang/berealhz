@@ -1,5 +1,5 @@
 const path = require("path")
-var webpack = require('webpack')
+const webpack = require('webpack')
 const uglify = require('uglifyjs-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextWebapckPlugin = require('extract-text-webpack-plugin');
@@ -34,7 +34,9 @@ var getEntry = function(globPath, pathDir) {
 //入口(通过getEntry方法得到所有的页面入口文件)
 var entries = getEntry('dev/**/*.js', 'dev/');
 
-var pages = Object.keys(entries);
+
+var tntries = getEntry('dev/**/*.js', 'dev/');
+var pages = Object.keys(tntries);
 let plugins = [
     new uglify(),
     new ExtractTextWebapckPlugin("css/[name].css"),
@@ -65,10 +67,6 @@ pages.forEach(function(pathname) {
 module.exports = {
     mode: 'development',
     // 入口文件配置
-    // entry: {
-    //     home: './dev/home/index.js',
-    //     account: './dev/account/index.js'
-    // },
     entry: entries,
     // 出口文件配置
     output: {
@@ -85,11 +83,6 @@ module.exports = {
                     fallback: "style-loader",
                     use: ['css-loader','postcss-loader','sass-loader']
                 }),
-                // use: [
-                //     {loader: "style-loader"},
-                //     {loader: "css-loader"},
-                //     {loader: "sass-loader"}
-                // ],
                 include: path.join(__dirname, './dev'), //限制范围，提高打包速度
                 exclude: /node_modules/
             },
@@ -99,10 +92,6 @@ module.exports = {
                     fallback: "style-loader",
                     use: ['css-loader','postcss-loader']
                 }),
-                // use: [
-                //     {loader: "style-loader"},
-                //     {loader: "css-loader"}
-                // ],
                 include: path.join(__dirname, './dev'), //限制范围，提高打包速度
                 exclude: /node_modules/
             },
@@ -191,39 +180,6 @@ module.exports = {
         ]
     },
     // 插件，用于生产模版和各项功能
-    // plugins: [
-    //     new uglify(),
-        // new htmlPlugin({
-        //     minify:true,
-        //     hash:true, //为了开发中js有缓存效果，所以加入hash，这样可以有效避免缓存JS。
-        //     template:'../dev/index.html' //是要打包的html模版路径和文件名称。
-        // })
-        // new HtmlWebpackPlugin({
-        //     template: path.resolve(__dirname,'./dev/home','index.html'),
-        //     // template:'./dev/home/index.html',
-        //     filename:'home.html',
-        //     chunks: ['index'],
-        //     hash:true,//防止缓存
-        //     minify:{
-        //         removeAttributeQuotes:true//压缩 去掉引号
-        //     }
-        // }),
-        // new HtmlWebpackPlugin({
-        //     template: path.resolve(__dirname,'./dev/account','index.html'),
-        //     // template:'./dev/home/index.html',
-        //     filename:'account.html',
-        //     chunks: ['info'],
-        //     hash:true,//防止缓存
-        //     minify:{
-        //         removeAttributeQuotes:true//压缩 去掉引号
-        //     }
-        // }),
-        // new ExtractTextWebapckPlugin("css/[name].css"),
-        // new PurifyCSSPlugin({ 
-        //     //这里配置了一个paths，主要是需找html模板，purifycss根据这个配置会遍历你的文件，查找哪些css被使用了。
-        //     paths: glob.sync(path.join(__dirname, './dev/*.html')),
-        // }),
-    // ],
     plugins: plugins,
     // 配置webpack开发服务功能
     devServer: {
